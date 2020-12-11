@@ -1,8 +1,8 @@
 #pragma once
 
-int length(char* value);
-
 char* read_line();
+
+int length(char* value);
 
 char* concat(char* left, char* right);
 

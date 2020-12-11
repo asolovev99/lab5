@@ -4,23 +4,6 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-int length(char* value)
-{
-	int result = 0;
-
-	if (value == NULL)
-	{
-		return 0;
-	}
-
-	while (value[result] != '\0')
-	{
-		result++;
-	}
-
-	return result;
-}
-
 char* read_line()
 {
 	char symbol = '\0';
@@ -45,6 +28,23 @@ char* read_line()
 		length_of_result++;
 
 		symbol = getchar();
+	}
+
+	return result;
+}
+
+int length(char* value)
+{
+	int result = 0;
+
+	if (value == NULL)
+	{
+		return 0;
+	}
+
+	while (value[result] != '\0')
+	{
+		result++;
 	}
 
 	return result;
