@@ -1,4 +1,4 @@
-#include"string.h"
+#include"string_private.h"
 #include<stdio.h>
 #include<string.h>
 
