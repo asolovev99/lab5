@@ -20,11 +20,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="string.h">
+    <None Include="string_my.h">
       <Filter>Исходные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="string_private.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
+    </None>
   </ItemGroup>
 </Project>

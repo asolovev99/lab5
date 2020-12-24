@@ -1,6 +1,5 @@
 #pragma once
 
-#include"string_private.h"
 #include<stdlib.h>
 #include<stdio.h>
 
@@ -11,15 +10,7 @@ char* read_line()
 	int length_of_result = 0;
 	result[0] = '\0';
 
-	//symbol = getchar();
 	symbol = getchar();
-	/*if (symbol != '\n')
-	{
-		result = (char*)realloc(result, sizeof(char) * 2);
-		result[0] = symbol;
-		result[1] = '\0';
-		length_of_result++;
-	}*/
 	while (symbol != '\n')
 	{
 		result = (char*)realloc(result, sizeof(char) * (length_of_result + 2));
@@ -81,7 +72,6 @@ int index_of(char* source, char* find)
 
 	if (find == NULL)
 	{
-		//printf("");// NULL - пустая строка
 		return 0;
 	}
 	else

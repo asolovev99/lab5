@@ -1,13 +1,6 @@
-#include"string_private.h"
 #include<stdio.h>
+#include"string_my.h"
 #include<string.h>
-
-//typedef struct test
-//{
-//	int a;
-//	int b;
-//	char c;
-//};
 
 int main()
 {
@@ -26,11 +19,6 @@ int main()
 	char* test_3;
 	while (1)
 	{
-		test_1 = read_line();
-		test_2 = read_line();
-		test_3 = strstr(test_1, test_2);
-		printf("strstr: .%s.\n", test_3);
-
 		test_1 = read_line();
 		test_2 = read_line();
 		test_compare = ñompare(test_1, test_2);
